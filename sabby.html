@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabbyna Yeseo Turns One 🎀</title>
+    <link rel="stylesheet" href="sabbyanim.css">
+</head>
+<body>
+    <!-- Language Selection Overlay -->
+    <div id="langSelectOverlay">
+        <div class="langCard">
+            <p>Choose your language / 언어를 선택하세요</p>
+            <button class="langBtn" data-lang="en">English</button>
+            <button class="langBtn" data-lang="kr">한국어</button>
+        </div>
+    </div>
+
+    <!-- Pre-intro Animation -->
+    <div id="preIntro">
+        <div class="celebrateText">🎉 Sabbyna Yeseo's 1st Birthday! 🎉</div>
+        <div class="balloons">
+            <span>🎈</span><span>🎀</span><span>💗</span><span>🎉</span>
+        </div>
+    </div>
+
+    <!-- Intro Overlay with Letter -->
+    <div id="introOverlay">
+        <div class="introCard">
+            <p id="introText">
+                Dear Family, Friends, and Godparents,<br><br>
+                You are especially invited to celebrate the <strong>1st Birthday</strong> of our beloved <strong>Sabbyna Yeseo</strong>!<br>
+                Your presence will make this day unforgettable.
+            </p>
+            <button id="okBtn">OK</button>
+        </div>
+    </div>
+
+    <!-- Confetti container -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Sparkles container -->
+    <div id="sparkles-container"></div>
+
+    <div class="container">
+        <!-- Hero Image -->
+        <div class="hero">
+            <img src="sabbyimages/sabby6.jpeg" alt="Sabbyna Hero Photo">
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="nav">
+            <button class="tab-btn active" data-target="when">When</button>
+            <button class="tab-btn" data-target="where">Where</button>
+            <button class="tab-btn" data-target="gallery">Gallery</button>
+        </div>
+
+        <div class="card">
+            <!-- When Section -->
+            <div class="section active" id="when">
+                <h2 id="whenTitle">📅 When</h2>
+                <div class="countdown" id="countdown">⏳ 0 days 0 hrs 0 mins 0 secs</div>
+                <p id="birthdayDate"><strong>Date of Birthday:</strong> January 13, 2026</p>
+                <p id="celebrationDate"><strong>Celebration Date:</strong> January 17, 2026</p>
+                <p id="time"><strong>Time:</strong> 2:00 PM</p>
+            </div>
+
+            <!-- Where Section -->
+            <div class="section" id="where">
+                <h2 id="whereTitle">📍 Where</h2>
+                <p id="venue"><strong>Venue:</strong> Vesta Premium Buffet</p>
+                <p id="address"><strong>Address:</strong> 70 Mannyeon-ro, Seo-gu, Daejeon</p>
+                <p id="room"><strong>Room:</strong> ORION</p>
+                <a class="btn" id="openMaps" href="https://maps.app.goo.gl/B8DRHT7QaUVL4USW6" target="_blank">Open in Google Maps</a>
+            </div>
+
+            <!-- Gallery Section -->
+            <div class="section" id="gallery">
+                <h2 id="galleryTitle">📸 Gallery</h2>
+                <div class="gallery">
+                    <div class="photo-frame">
+                        <img src="sabbyimages/sabby1.jpeg" alt="Sabbyna photo 1">
+                        <p class="caption" id="caption1">💗 Cute Smile!</p>
+                    </div>
+                    <div class="photo-frame">
+                        <img src="sabbyimages/sabby2.jpeg" alt="Sabbyna photo 2">
+                        <p class="caption" id="caption2">🎀 Adorable Moments</p>
+                    </div>
+                    <div class="photo-frame">
+                        <img src="sabbyimages/sabby3.jpeg" alt="Sabbyna photo 3">
+                        <p class="caption" id="caption3">💞 Loving Baby</p>
+                    </div>
+                    <div class="photo-frame">
+                        <img src="sabbyimages/sabby4.jpeg" alt="Sabbyna photo 4">
+                        <p class="caption" id="caption4">✨ Adorable!</p>
+                    </div>
+                    <div class="photo-frame">
+                        <img src="sabbyimages/sabby5.jpeg" alt="Sabbyna photo 5">
+                        <p class="caption" id="caption5">Pretty!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox for gallery -->
+    <div class="lightbox" id="lightbox"><img src="" alt="Enlarged Photo"></div>
+
+    <script src="sabbyy.js"></script>
+</body>
+</html>
